@@ -1,0 +1,324 @@
+<html>
+<head>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+         }
+        * {
+      margin: 0;
+      padding: 0;
+      }
+        .main-page{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .left-container{
+          padding-top: 5rem;
+          padding-left: 5rem;
+          padding-right: 8rem;
+        }
+        .left-text h1 {
+         font-size: 51px;
+         margin-bottom: 1rem;
+        }
+        .left-text{
+            color: #1E0E62;
+            margin-right: 12rem;
+            margin-left: 5rem;
+            padding-bottom: 4rem;
+        }
+       .left-text p {
+         font-size: 20px;
+         color: #666;
+        }
+        .nevigation h2 {
+         font-size: 32px;
+         margin-bottom: 1rem;
+         color: #1E0E62;
+         }
+        .nevigation{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5rem;
+          margin-left: 4rem;
+          
+        }
+        .nav a {
+          margin-right: 2rem ;
+        }
+        .buttons {
+        margin: 2rem 0;
+        display: flex;
+        gap: 30px;
+        padding-left: 5rem;
+        }
+        .buttons button {
+          padding: 10px 20px;
+         border-radius: 30px;
+         font-size: 14px;
+         border: none;
+         cursor: pointer;
+         transition: background 0.3s ease;
+      }
+
+      .buttons-1 {
+       background-color: #1ce1d1;
+       color: white;
+      }
+
+      .buttons-2 {
+        background-color: #f5f5f5;
+       color: #1E0E62;
+       border: 1px solid #ccc;
+     }
+        .image {
+        height: 100%;
+        width: 90%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+        .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+      }
+      .second-page{
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url("./image.png");
+      color: #fff;
+      position: relative;
+      padding-top: 8rem;  
+      }
+      .second-page h2 {
+      font-size: 36px;
+      margin-bottom: 1rem;
+    }
+
+    .second-page p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      color: #e0e0e0;
+      padding-bottom: 4rem;
+    }
+    .features-cards{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      height: 27rem;
+      width: 19rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .icon-img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 25px;
+    }
+
+    .card p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    .card button {
+      background-color: #ff5e8e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .third-page {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f9f9f9;
+    }
+    .third-page heading{
+      color: #1E0E62;
+    }
+    .third-page p {
+      font-size: 20px;
+      color: #9a9aaf;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .third-page button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: 2px solid #1E0E62;
+      border-radius: 25px;
+      background: none;
+      color: #1E0E62;
+      cursor: pointer;
+      margin-bottom: 3rem;
+      }
+      .team-cards{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 1rem;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 1px solid #e0e0e0;
+    }
+    .icons img{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+      text-align: center;
+      color: #9a9aaf;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-right: 1px solid #e0e0e0;
+      transition: color 0.3s ease;  
+    }
+    .last-page{
+      background-color:#1E0E62 ;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 6.5rem;
+      height: 30vh;
+      width: 100vw;
+    }
+    .last-page h3{
+      color: #FFFFFF;
+    }
+    </style>
+</head>
+<body>
+  <div class="main-page">
+    <div class="left-container">
+      <div class="nevigation">
+        <h2>Startup 3</h2>
+        <div class="nav">
+            <a href="">Pricing</a>
+            <a href="">About</a>
+          </div>
+        </div>
+          <div class="left-text">
+            <h1>Great tool to boost your startup</h1>
+            <p>We made it so beautiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection!</p>
+          </div>
+          <div class="buttons">
+            <button class="buttons-1">Get Started</button>
+            <button class="buttons-2">Learn More</button>
+          </div>
+          <div>
+            <h4 style="color: #15143966,;">By signing up, you agree to the Terms of Service</h4>
+          </div>
+    </div>
+    <div class="image">
+        <img src="./Photo.png" alt="image not found">
+    </div>
+  </div>  
+  <div class="second-page">
+    <h2>Features</h2>
+    <p>
+      We have created a new product that will help designers, developers and
+      companies create websites for their startups quickly and easily.
+    </p>
+    <div class="features-cards">
+      <div class="card">
+        <img src="./fa-flash.png" alt="Easy to Use" class="icon-img" />
+        <h3>Easy to Use</h3>
+        <p>To get started, you select the desired sample and base the entire website on it. It’s that simple!</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="card">
+        <img src="./fa-random.png" alt="Variety of Designs" class="icon-img" />
+        <h3>Variety of Designs</h3>
+        <p>You can decide whether to create your site using UI Kit blocks or samples. The blocks can merge together.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="card">
+        <img src="./fa-play-circle.png" alt="Feel Our Design" class="icon-img" />
+        <h3>Feel Our Design</h3>
+        <p>Samples will show you the feeling on how to play around using the components in the website building process.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+  <div class="third-page">
+    <div class="heading">
+      <h1>Our Awesome Team</h1>
+      <p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+      <button>Enjoy Our Team</button>
+    </div>
+    <div class="team-cards">
+      <div class="card">
+        <img src="./Userpic@2x.png" alt="Vanessa Laird">
+        <h3>Vanessa Laird</h3>
+        <p>UI DESIGNER</p>
+        <div class="icons">
+          <img src="./fa-twitter.png" alt="icon not found">
+          <img src="./fa-facebook-square.png" alt="icon not found">
+          <img src="./fa-dribbble.png" alt="icon not found"> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="./user2.png" alt="Vanessa Laird">
+        <h3>Mason Campbell</h3>
+        <p>UI DESIGNER</p>
+        <div class="icons">
+          <img src="./fa-twitter.png" alt="icon not found">
+          <img src="./fa-facebook-square.png" alt="icon not found">
+          <img src="./fa-dribbble.png" alt="icon not found"> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Userpic (1).png" alt="Vanessa Laird">
+        <h3>Irea Evans</h3>
+        <p>CLIENT MANAGER</p>
+        <div class="icons">
+          <img src="./fa-twitter.png" alt="icon not found">
+          <img src="./fa-facebook-square.png" alt="icon not found">
+          <img src="./fa-dribbble.png" alt="icon not found"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="last-page">
+    <h3>Portfolio</h3>
+    <h3>How it Works</h3>
+    <h3>Pricing</h3>
+    <h3>About</h3>
+    <h3>Contacts</h3>
+  </div>
+</body>
+</html>
