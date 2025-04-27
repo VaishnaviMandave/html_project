@@ -5,8 +5,9 @@
         font-family: Arial, sans-serif;
          }
         * {
-      margin: 0;
-      padding: 0;
+       margin: 0;
+       padding: 0;
+        box-sizing: border-box;
       }
         .main-page{
             height: 100vh;
@@ -88,18 +89,20 @@
         
       }
       .second-page{
-      height: 100vh;
       width: 100vw;
+      height: 100vh;
       text-align: center;
       padding: 4rem 2rem;
-      background: url("./image.png");
+      background-image:url("./image.png");
+      background-size: cover;        /* Ensures it covers the area */
+      background-position: center;   /* Center the image */
       color: #fff;
       position: relative;
-      padding-top: 8rem;  
+      padding-top: 5rem;  
       }
       .second-page h2 {
       font-size: 36px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .second-page p {
@@ -107,36 +110,36 @@
       max-width: 600px;
       margin: 0 auto 3rem auto;
       color: #e0e0e0;
-      padding-bottom: 4rem;
+      
     }
     .features-cards{
       display: flex;
       justify-content: space-evenly;
-      gap: 2rem;
+      gap: 1rem;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: scale-down;
+      margin-bottom: 1rem;
     }
     .card {
       background-color: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 12px;
       padding: 2rem;
-      height: 27rem;
-      width: 19rem;
+      height: 26rem;
+      width: 20rem;
       text-align: center;
-      transition: all 0.3s ease;
-    }
-    .icon-img {
-      width: 30px;
-      height: 30px;
-      margin-bottom: 3rem;
-      margin-top: 3rem;
     }
     .card h3 {
       margin-bottom: 1rem;
-      font-size: 25px;
+      font-size: 20px;
     }
 
     .card p {
-      font-size: 18px;
+      font-size: 15px;
       color: #ccc;
     }
     .card button {
@@ -149,7 +152,8 @@
       cursor: pointer;
     }
     .third-page {
-      margin-top: 4rem;
+
+      margin-top: 3rem;
       text-align: center;
       padding: 4rem 2rem;
       background: #f9f9f9;
@@ -157,13 +161,13 @@
     .third-page heading{
       color: #1E0E62;
     }
-    .third-page p {
+    .heading p {
       font-size: 20px;
       color: #9a9aaf;
       max-width: 600px;
-      margin: 0 auto 2rem auto;
       padding-top: 3rem;
-      padding-bottom: 3rem;
+      margin: 0 auto 30px;
+      padding-bottom: 2rem;
     }
     .third-page button {
       padding: 1rem 2rem;
@@ -173,38 +177,49 @@
       background: none;
       color: #1E0E62;
       cursor: pointer;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       }
       .team-cards{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
+      align-items: center;
       width: 100%;
-      border-top: 1px solid #e0e0e0;
       margin-top: 1rem;
     }
-    .card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
+    .team-member{
+      border: 2px solid #EBEAED;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      width: 22rem;
+      height: 21rem;
     }
+    .team-member h3{
+      margin-top: 3rem; 
+    }
+    .team-member p{
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
     .icons {
       display: flex;
       justify-content: space-evenly;
-      border-top: 1px solid #e0e0e0;
+      width: 100%;
+      
     }
     .icons img{
-      width: 20px;
-      height: 20px;
+      width: 21px;
+      height: 22px;
       border-radius: 50%;
-      object-fit: cover;
+      object-fit: scale-down;
       text-align: center;
       color: #9a9aaf;
       font-size: 1.2rem;
-      text-decoration: none;
-      border-right: 1px solid #e0e0e0;
-      transition: color 0.3s ease;  
+      border: none; /* Clears all borders first */
+      border-top: 2px solid #EBEAED;
+      border-right: 2px solid #EBEAED;
+      padding: auto;
     }
     .last-page{
       background-color:#1E0E62 ;
@@ -238,7 +253,7 @@
             <button class="buttons-2">Learn More</button>
           </div>
           <div>
-            <h4 style="color: #15143966,;">By signing up, you agree to the Terms of Service</h4>
+            <h4 style="color: #15143966">By signing up, you agree to the Terms of Service</h4>
           </div>
     </div>
     <div class="image">
@@ -281,8 +296,8 @@
       <button>Enjoy Our Team</button>
     </div>
     <div class="team-cards">
-      <div class="card">
-        <img src="./Userpic@2x.png" alt="Vanessa Laird">
+      <div class="team-member">
+        <img src="./Userpic.png" alt="Vanessa Laird">
         <h3>Vanessa Laird</h3>
         <p>UI DESIGNER</p>
         <div class="icons">
@@ -291,7 +306,7 @@
           <img src="./fa-dribbble.png" alt="icon not found"> 
         </div>
       </div>
-      <div class="card">
+      <div class="team-member">
         <img src="./user2.png" alt="Vanessa Laird">
         <h3>Mason Campbell</h3>
         <p>UI DESIGNER</p>
@@ -301,7 +316,7 @@
           <img src="./fa-dribbble.png" alt="icon not found"> 
         </div>
       </div>
-      <div class="card">
+      <div class="team-member">
         <img src="./Userpic (1).png" alt="Vanessa Laird">
         <h3>Irea Evans</h3>
         <p>CLIENT MANAGER</p>
